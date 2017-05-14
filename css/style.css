@@ -1,0 +1,223 @@
+/* ---- reset ---- */ body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: calc(100% + 200px); background-color: #ffffff; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 150%;
+  -webkit-transition: all linear .2s;
+	-moz-transition: all linear .2s;
+	-ms-transition: all linear .2s;
+	-o-transition: all linear .2s;
+	transition: all linear .2s;
+}
+
+html, body, .cd-main-content {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::after, *::before {
+  content: '';
+}
+
+body {
+  font-size: 100%;
+  font-family: "Roboto", -apple-system-body, sans-serif;
+  color: rgba(0,0,0,0.5);
+  background: #fff;
+  padding: 0;
+}
+
+a {
+  color: #f58780;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #4A4A4A;
+}
+
+.centered
+{
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 300px;
+}
+
+hr
+{
+	box-shadow: none;
+	border-top: 1px dotted #ccc;
+	border-bottom: none;
+	margin: 12px 0;
+	outline: none;
+}
+
+#particles-js
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.outer
+{
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+	text-align: left
+}
+
+.btn {
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20);
+	border-radius: 100px;
+	line-height: 120%;
+	font-size: 18px;
+	font-weight: 600;
+	color: #fff;
+	padding: 14px 38px;
+	letter-spacing: 0.4px;
+	display: inline-block;
+	background: linear-gradient(45deg, #6740B7 0%, #2B8AE2 100%);
+	-webkit-appearance: none;
+	border: none;
+	cursor: pointer;
+	margin-right: 20px;
+	vertical-align: top;
+	margin-bottom: 20px;
+}
+
+.btn:hover, .btn:active {
+	background: linear-gradient(45deg, #6740B7 0%, #2B8AE2 100%);
+	color: #fff;
+	opacity: 0.8;
+	transform: scale(1.05);
+}
+
+p {
+	margin: 20px 0;
+	font-size: 18px;
+	color: #4A4A4A;
+	font-weight: 500;
+}
+
+#content
+{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	height: auto;
+	text-align: left;
+	width: 100%;
+	background: transparent;
+	padding: 60px 0;
+}
+
+h1 {
+	font-weight: 800;
+	font-size: 40px;
+}
+
+h2 {
+	font-weight: 800;
+	font-size: 26px;
+}
+
+.lighter {
+	color: rgba(74,73,74,0.40);
+}
+
+.col-sm-6, .col-sm-4 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.border {
+	background: rgba(255,255,255,0.65);
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.border:hover, .border:active {
+	background: rgba(255,255,255,0.65);
+	box-shadow: 0 5px 12px 0 rgba(0,0,0,0.15);
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.col-sm-4 a, .col-sm-4 a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+#an, #an:hover {
+	color: #6543B9;
+}
+
+#an:hover {
+	text-decoration: underline;
+}
+
+.image {
+	width: calc(100% + 40px);
+	position: relative;
+	top: -20px;
+	left: -20px;
+	padding-bottom: 56.25%;
+	background: #eee;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-size: cover;
+	background-position: center;
+}
+
+.smaller {
+	font-size: 16px;
+}
+
+@media (min-width: 768px) {
+	.col-sm-6:nth-child(odd) {
+		padding-top: 40px;
+		padding-right: 40px;
+		padding-bottom: 40px;
+	}
+
+	.col-sm-6:nth-child(even) {
+		padding-top: 40px;
+		padding-left: 40px;
+		padding-bottom: 40px;
+	}
+}
