@@ -1,4 +1,4 @@
-# PhilZet Landing Page Template
+# Phil Zet Landing Page Template
 A modern landing page template designed and developed by Phil Zet (Philipp Zakharchenko).
 
 ## Live Demo
